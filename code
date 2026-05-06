@@ -1,0 +1,11 @@
+<!-- https://www.hackerrank.com/challenges/staircase/problem -->
+
+fn staircase(n: i32) {
+    for i in 1..=n {
+        println!("{:>width$}", "#".repeat(i as usize), width = n as usize);
+    }
+}
+
+fn main() {
+    staircase(6);
+}
